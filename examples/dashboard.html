@@ -7,7 +7,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
-    Team 10 Smart Home
+    Team 10 Smart House
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
@@ -32,7 +32,7 @@
             T10
           </a>
           <a href="javascript:void(0)" class="simple-text logo-normal">
-            Smart Home
+            Smart House
           </a>
         </div>
         <ul class="nav">
@@ -41,21 +41,7 @@
               <i class="tim-icons icon-chart-pie-36"></i>
               <p>Dashboard</p>
             </a>
-          </li>
-         
-          <li>
-            <a href="./notifications.html">
-              <i class="tim-icons icon-bell-55"></i>
-              <p>Notifications</p>
-            </a>
-          </li>
-          <li>
-            <a href="./user.html">
-              <i class="tim-icons icon-single-02"></i>
-              <p>User Profile</p>
-            </a>
-          </li>
-          
+          </li>        
         </ul>
       </div>
     </div>
@@ -80,61 +66,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto">
-              <li class="search-bar input-group">
-                <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split"></i>
-                  <span class="d-lg-none d-md-block">Search</span>
-                </button>
-              </li>
-              <li class="dropdown nav-item">
-                <a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                  <div class="notification d-none d-lg-block d-xl-block"></div>
-                  <i class="tim-icons icon-sound-wave"></i>
-                  <p class="d-lg-none">
-                    Notifications
-                  </p>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
-                  <li class="nav-link">
-                    <a href="#" class="nav-item dropdown-item">Door closed</a>
-                  </li>
-                  <li class="nav-link">
-                    <a href="javascript:void(0)" class="nav-item dropdown-item">Light turned off</a>
-                  </li>
-                  <li class="nav-link">
-                    <a href="javascript:void(0)" class="nav-item dropdown-item">Bluhbluhbluh</a>
-                  </li>
-                  <li class="nav-link">
-                    <a href="javascript:void(0)" class="nav-item dropdown-item">Another notification</a>
-                  </li>
-                  <li class="nav-link">
-                    <a href="javascript:void(0)" class="nav-item dropdown-item">Another one</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown nav-item">
-                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                  <div class="photo">
-                    <img src="../assets/img/dd.jpg" alt="Profile Photo">
-                  </div>
-                  <b class="caret d-none d-lg-block d-xl-block"></b>
-                  <p class="d-lg-none">
-                    Log out
-                  </p>
-                </a>
-                <ul class="dropdown-menu dropdown-navbar">
-                  <li class="nav-link">
-                    <a href="javascript:void(0)" class="nav-item dropdown-item">Profile</a>
-                  </li>
-                  <li class="nav-link">
-                    <a href="javascript:void(0)" class="nav-item dropdown-item">Settings</a>
-                  </li>
-                  <li class="dropdown-divider"></li>
-                  <li class="nav-link">
-                    <a href="javascript:void(0)" class="nav-item dropdown-item">Log out</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="separator d-lg-none"></li>
+             <li class="separator d-lg-none"></li>
             </ul>
           </div>
         </div>
@@ -159,25 +91,19 @@
               <div class="card-header ">
                 <div class="row">
                   <div class="col-sm-6 text-left">
-                    <h5 class="card-category">Total Usage</h5>
-                    <h2 class="card-title">Electricity</h2>
+                    <h5 class="card-category">Door Status (times)</h5>
+                    <h2 class="card-title">Current: Open</h2>
                   </div>
                   <div class="col-sm-6">
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
                       <label class="btn btn-sm btn-primary btn-simple active" id="0">
                         <input type="radio" name="options" checked>
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Month</span>
+                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">every 2h</span>
                         <span class="d-block d-sm-none">
                           <i class="tim-icons icon-single-02"></i>
                         </span>
                       </label>
-                      <label class="btn btn-sm btn-primary btn-simple" id="1">
-                        <input type="radio" class="d-none d-sm-none" name="options">
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Day</span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-gift-2"></i>
-                        </span>
-                      </label>
+                      
                       
                     </div>
                   </div>
@@ -195,8 +121,8 @@
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
-                <h5 class="card-category">Temperature</h5>
-                <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i> -20 ℃</h3>
+                <h5 class="card-category">Temperature (℃)</h5>
+                <h3 class="card-title"><i class="tim-icons  text-primary"></i> Current: -2 ℃</h3>
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -209,8 +135,8 @@
             <div class="card card-chart">
               <div class="card-header">
 
-                <h5 class="card-category">Light</h5>
-                <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i>off</h3>
+                <h5 class="card-category">Light Duration Chart (secs)</h5>
+                <h3 class="card-title"><i class="tim-icons text-info"></i>Light1/Light2: On/Off</h3>
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -222,8 +148,8 @@
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
-                <h5 class="card-category">Garbage Bin</h5>
-                <h3 class="card-title"><i class="tim-icons icon-send text-success"></i>Empty</h3>
+                <h5 class="card-category">Garbage Bin Full (times)</h5>
+                <h3 class="card-title"><i class="tim-icons text-success"></i>Current: Empty</h3>
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -266,7 +192,7 @@
                         </td>
                         <td>
                           <p class="title">Taking out the trash</p>
-                          <p class="text-muted">The garbage is full, 8:47 AM</p>
+                          <p class="text-muted">The garbage bin is full 8:47 AM</p>
                         </td>
                         <td class="td-actions text-right">
                           <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
@@ -286,8 +212,8 @@
                           </div>
                         </td>
                         <td>
-                          <p class="title">Turn off the lights</p>
-                          <p class="text-muted">No action was detected over 20mins, please turn off the lights 10:47 AM</p>
+                          <p class="title">Light is on</p>
+                          <p class="text-muted">Light is on at 10:47 AM</p>
                         </td>
                         <td class="td-actions text-right">
                           <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
@@ -307,8 +233,8 @@
                           </div>
                         </td>
                         <td>
-                          <p class="title">The door was unlocked</p>
-                          <p class="text-muted">The door of the room is not locked, please note 14：00 pm</p>
+                          <p class="title">The door is open</p>
+                          <p class="text-muted">The door of the room is open, please note 14：00 pm</p>
                         </td>
                         <td class="td-actions text-right">
                           <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
@@ -328,8 +254,8 @@
                           </div>
                         </td>
                         <td>
-                          <p class="title">Temperature is abnormal, please note</p>
-                          <p class="text-muted">Temperature is abnormal, please note 11:19 AM</p>
+                          <p class="title">Light is off</p>
+                          <p class="text-muted">Light is off at 11:19 AM</p>
                         </td>
                         <td class="td-actions text-right">
                           <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
@@ -349,8 +275,8 @@
                           </div>
                         </td>
                         <td>
-                          <p class="title">Door is opened</p>
-                          <p class="text-muted">Door is opened. </p>
+                          <p class="title">Door is closed</p>
+                          <p class="text-muted">Door is closed. 13:00 pm </p>
                         </td>
                         <td class="td-actions text-right">
                           <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
@@ -390,7 +316,7 @@
                           Temperature
                         </td>
                         <td>
-                          -20 ℃
+                          -2 ℃
                         </td>
                         <td>
                      
@@ -401,10 +327,24 @@
                       </tr>
                       <tr>
                         <td>
-                          Light
+                          Light1
                         </td>
                         <td>
-                          off
+                          Off
+                        </td>
+                        <td>
+                      
+                        </td>
+                        <td class="text-center">
+                        
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Light2
+                        </td>
+                        <td>
+                          Off
                         </td>
                         <td>
                       
@@ -432,18 +372,17 @@
                           Door
                         </td>
                         <td>
-                          Closed
+                          Open
                         </td>
                         <td>
                         
                         </td>
                         <td class="text-center">
-                 
                         </td>
                       
                     </tbody>
                   </table>
-                  <br><br><br><br><br>
+                  <br><br><br><br>
                 </div>
               </div>
             </div>
@@ -452,29 +391,13 @@
       </div>
       <footer class="footer">
         <div class="container-fluid">
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="javascript:void(0)" class="nav-link">
-                Team 10
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="javascript:void(0)" class="nav-link">
-                About Us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="javascript:void(0)" class="nav-link">
-                Blog
-              </a>
-            </li>
-          </ul>
+         
           <div class="copyright">
             ©
             <script>
               document.write(new Date().getFullYear())
-            </script> made with <i class="tim-icons icon-heart-2"></i> by
-            <a href="javascript:void(0)" target="_blank">Team 10</a> for a better web.
+            </script><i class="tim-icons"></i>
+               Team 10 for smart house
           </div>
         </div>
       </footer>

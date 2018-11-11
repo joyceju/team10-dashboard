@@ -86,7 +86,7 @@ demo = {
       type: 'line',
       responsive: true,
       data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        labels: ["0", "2", "4", "6", "8", "10", "12", "14", "16", "18", "20", "22"],
         datasets: [{
           label: "Active Users",
           borderColor: "#f96332",
@@ -99,7 +99,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 630]
+          data: [1, 0, 1, 0]
         }]
       },
       options: gradientChartOptionsConfiguration
@@ -183,7 +183,55 @@ demo = {
           },
           ticks: {
             suggestedMin: 0,
-            suggestedMax: 40,
+            suggestedMax: 4,
+            padding: 10,
+            fontColor: "#9a9a9a"
+          }
+        }],
+
+        xAxes: [{
+          barPercentage: 1.6,
+          gridLines: {
+            drawBorder: false,
+            color: 'rgba(225,78,202,0.1)',
+            zeroLineColor: "transparent",
+          },
+          ticks: {
+            padding: 20,
+            fontColor: "#9a9a9a"
+          }
+        }]
+      }
+    };
+//settings for open door status
+    gradientChartOptionsConfigurationWithTooltipPurple_second = {
+      maintainAspectRatio: false,
+      legend: {
+        display: false
+      },
+
+      tooltips: {
+        backgroundColor: '#f5f5f5',
+        titleFontColor: '#333',
+        bodyFontColor: '#666',
+        bodySpacing: 4,
+        xPadding: 12,
+        mode: "nearest",
+        intersect: 0,
+        position: "nearest"
+      },
+      responsive: true,
+      scales: {
+        yAxes: [{
+          barPercentage: 1.6,
+          gridLines: {
+            drawBorder: false,
+            color: 'rgba(29,140,248,0.0)',
+            zeroLineColor: "transparent",
+          },
+          ticks: {
+            suggestedMin: 0,
+            suggestedMax: 3,
             padding: 10,
             fontColor: "#9a9a9a"
           }
@@ -374,7 +422,7 @@ demo = {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 15,
         pointRadius: 4,
-        data: [10, 9, 7, -2, -6, -8],
+        data: [10, 9, 7, -2],
       }]
     };
 
@@ -394,9 +442,9 @@ demo = {
     gradientStroke.addColorStop(0, 'rgba(66,134,121,0)'); //green colors
 
     var data = {
-      labels: ['week1', 'week2', 'week3', 'week4'],
+      labels: ['day 1-2', 'day 3-4', 'day 5-6', 'day 7'],
       datasets: [{
-        label: "Frequency",
+        label: "Garbage",
         fill: true,
         backgroundColor: gradientStroke,
         borderColor: '#00d6b4',
@@ -424,9 +472,9 @@ demo = {
 
 
 
-
-    var chart_labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
-    var chart_data = [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100];
+    // door status
+    var chart_labels = ["0", "2", "4", "6", "8", "10", "12", "14", "16", "18", "20", "22"];
+    var chart_data = [1,0,1,0,0,0,0,0,0,1,0,0];
 
 
     var ctx = document.getElementById("chartBig1").getContext('2d');
@@ -441,7 +489,7 @@ demo = {
       data: {
         labels: chart_labels,
         datasets: [{
-          label: "Electricity",
+          label: "door open",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: '#d346b1',
@@ -458,8 +506,16 @@ demo = {
           data: chart_data,
         }]
       },
-      options: gradientChartOptionsConfigurationWithTooltipPurple
+      options: gradientChartOptionsConfigurationWithTooltipPurple_second
     };
+
+
+
+
+
+
+
+
     var myChartData = new Chart(ctx, config);
     $("#0").click(function() {
       var data = myChartData.config.data;
@@ -500,7 +556,7 @@ demo = {
         display: false
       },
       data: {
-        labels: ['MON', 'TUES', 'WED', 'THUR', 'FRIDY', 'SAT','SUN'],
+        labels: ['MON', 'TUES', 'WED', 'THUR', 'FRI', 'SAT','SUN'],
         datasets: [{
           label: "Duration",
           fill: true,
